@@ -15,7 +15,7 @@ app.get("/aboutGCU",(req,res)=>{
 	res.render("templetes/about.ejs");
 })
 
-
+const port=process.env.PORT;
 app.listen(5000,()=>{
 	console.log("Listining to port 5000");
 })
