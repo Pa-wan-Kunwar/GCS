@@ -16,6 +16,6 @@ app.get("/aboutGCU",(req,res)=>{
 })
 
 const port=process.env.PORT;
-app.listen(5000,()=>{
+app.listen(port,()=>{
 	console.log("Listining to port 5000");
 })
