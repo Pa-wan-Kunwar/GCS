@@ -1,6 +1,6 @@
 <% layout('layouts/boilerplate')%>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide p-3 bg-dark" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button
             type="button"
@@ -23,7 +23,7 @@
             <div class="carousel-item active">
                     <img
                         src="/images/gallery/0.jpg"
-                        class="d-block w-100 img-fluid"
+                        class="d-block w-100 img-fluid rounded"
                         alt="..."
                     />
                 </div>
@@ -31,7 +31,7 @@
             <div class="carousel-item ">
                     <img
                         src="/images/gallery/<%=i%>.jpg"
-                        class="d-block w-100 img-fluid"
+                        class="d-block w-100 img-fluid rounded"
                         alt="..."
                     />
             </div>
@@ -62,13 +62,13 @@
 <div class="card mx-auto" style="width: 18rem;">
     <img
         src="/images/icons/GCSfounder.JPG"
-        class="card-img-top"
+        class="card-img-top rounded"
         alt="..."
         height="300"
     />
-    <div class="card-body">
-        <p class="card-text">
-            <p><b>From the Founders desk</b></p>
+    <div class="card-body ">
+        <p class="card-text alert alert-warning">
+            <b>From the Founder's desk</b>
         </p>
     </div>
     <!-- Button trigger modal -->
@@ -94,7 +94,7 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Founder</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Founder's desk</h5>
                     <button
                         type="button"
                         class="btn-close"
@@ -111,8 +111,11 @@
                         of hindu traditions and that is what the school wished to inculcate in the teachers and
                         students. Guru shishya parampara
                        </p>
-                        <img src="/images/icons/swami.JPG">
-                        <p> Jiss shiksha se hum apna jeevan nirman kar saken, manushya bann sakein, charitra
+                       <div >
+                            <img  class="rounded mx-auto d-block" src="/images/icons/swami.JPG" style="width: 20rem;">
+                       </div>
+                        
+                        <p class="alert alert-success"> Jiss shiksha se hum apna jeevan nirman kar saken, manushya bann sakein, charitra
                         gathan kar sakein aur vicharon ka samanjas kar sakein vahi vastav mei shiksha kehlane
                         yogya hai - <b>SWAMI VIVEKANAND </b>
                         </p>
